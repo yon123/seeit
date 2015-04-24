@@ -25,8 +25,25 @@ html {
  */
 
 body {
-   background-image: url("http://lerablog.org/wp-content/uploads/2013/07/concert.jpg");
-   background-position: center;
+   /*background-image: url("http://lerablog.org/wp-content/uploads/2013/07/concert.jpg");*/
+  /* background-position: center;*/
+}
+video {
+  video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+}
+
+
+
+
+
 }
 
 /* HTML5 display definitions
