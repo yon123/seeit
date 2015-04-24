@@ -1,0 +1,29 @@
+<h1> Sign Up </h1>
+
+<form action="signup" method="post">
+  <div>
+    <label>
+      Name: <input type="text" name="name" value=<%= @user.name.to_s.inspect %> />
+    </label>
+    <% @user.errors[:name].each do |error| %>
+      <div class="form-error"><%= error %></div>
+    <% end %>
+  </div>
+  <div>
+    <label>
+      Email: <input type="text" name="email"  value=<%= @user.email.to_s.inspect %> />
+    </label>
+    <% @user.errors[:email].each do |error| %>
+      <div class="form-error"><%= error %></div>
+    <% end %>
+  </div>
+  <div>
+    <label>
+      Password: <input type="password" name="password"/>
+    </label>
+    <% @user.errors[:password].each do |error| %>
+      <div class="form-error"><%= error %></div>
+    <% end %>
+  </div>
+  <input type="submit" value="Submit">
+</form>
