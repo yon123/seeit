@@ -10,8 +10,9 @@ h1 {
   font-family: Helvetica;
   font-size: 250%;
   color: white;
-  background-image: url(http://cdn2.pitchfork.com/news/54677/42047684.png);
+  /*background-image: url(http://cdn2.pitchfork.com/news/54677/42047684.png);*/
   background-position: center;
+
 }
 
 html {
@@ -39,6 +40,14 @@ video {
   height: auto;
   z-index: -100;
 }
+
+
+.tfheader {
+color: white;
+}
+
+
+
 
 
 

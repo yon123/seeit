@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>Search for the Artist</title>
+
 <meta name="ROBOTS" content="NOINDEX, NOFOLLOW" />
 <!-- Add jQuery to your website if you don't have it already -->
 <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
@@ -9,8 +8,8 @@
 <script type="text/javascript">
 $(function() {
   $("#tfq2b").click(function() {
-    if ($("#tfq2b").val() == "Search our website"){
-      $("#tfq2b").val("SEARCH ON!!");
+    if ($("#tfq2b").val() == ""){
+      $("#tfq2b").val("");
     }
   });
 });
@@ -38,14 +37,14 @@ $(function() {
   .tfbutton2 {
     margin: 0;
     padding: 5px 7px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Helvetica;
     font-size:14px;
     font-weight:bold;
     outline: none;
     cursor: pointer;
     text-align: center;
     text-decoration: none;
-    color: #ffffff;
+    color: black;
     border: solid 1px #0076a3; border-right:0px;
     background: #0095cd;
     background: -webkit-gradient(linear, left top, left bottom, from(#00adee), to(#0078a5));
@@ -62,17 +61,18 @@ $(function() {
   /* Fixes submit button height problem in Firefox */
   .tfbutton2::-moz-focus-inner {
     border: 0;
+    color: black;
   }
   .tfclear{
     clear:both;
   }
 </style>
-</head>
+
 <body>
   <!-- HTML for SEARCH BAR -->
   <div id="tfheader">
-    <form id="tfnewsearch" method="get" action="http://www.youtube.com">
-            <input type="text" id="tfq2b" class="tftextinput2" name="q" size="21" maxlength="120" value="SEARCH ON!"><input type="submit" value=">" class="tfbutton2">
+    <form id="tfnewsearch" method="get" action="http://www.google.com">
+            <input type="text" id="tfq2b" class="tftextinput2" name="q" size="21" maxlength="120" value=""><input type="submit" value=">" class="tfbutton2">
     </form>
     <div class="tfclear"></div>
   </div>
